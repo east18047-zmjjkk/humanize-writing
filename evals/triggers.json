@@ -1,0 +1,33 @@
+{
+  "skill": "humanize-writing",
+  "test_cases": [
+    {
+      "input": "Rewrite this draft to remove the AI flavor and make it sound more human",
+      "should_trigger": true
+    },
+    {
+      "input": "Humanize this paragraph so it doesn't sound like ChatGPT wrote it",
+      "should_trigger": true
+    },
+    {
+      "input": "Edit this text to match my usual writing style and cut the robotic parts",
+      "should_trigger": true
+    },
+    {
+      "input": "Make this academic paper section sound less AI-generated",
+      "should_trigger": true
+    },
+    {
+      "input": "What's the weather today?",
+      "should_trigger": false
+    },
+    {
+      "input": "Write a Python function to sort a list",
+      "should_trigger": false
+    },
+    {
+      "input": "Summarize this article",
+      "should_trigger": false
+    }
+  ]
+}

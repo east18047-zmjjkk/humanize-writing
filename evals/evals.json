@@ -1,0 +1,41 @@
+{
+  "skill": "humanize-writing",
+  "test_cases": [
+    {
+      "name": "remove_basic_ai_tells",
+      "input": "Rewrite this to sound human: In today's digital landscape, it is important to note that leveraging robust tools can unlock a transformative experience that underscores the pivotal role of technology.",
+      "assertions": [
+        "Removes or replaces 'In today's digital landscape', 'it is important to note', 'leveraging', 'robust', 'unlock', 'transformative', 'underscores', 'pivotal'",
+        "Produces natural, varied sentence rhythm",
+        "Preserves the core meaning that good tools help"
+      ]
+    },
+    {
+      "name": "academic_humanize",
+      "input": "Humanize this academic paragraph: This paper delves into the intricate relationship between variables. The findings highlight a comprehensive need for further research in this realm. Furthermore, the results play a crucial role in fostering understanding.",
+      "assertions": [
+        "Removes delve, intricate, comprehensive, realm, furthermore, crucial, fostering",
+        "Keeps academic precision and clarity",
+        "Avoids empty significance inflation"
+      ]
+    },
+    {
+      "name": "style_profile_match",
+      "input": "Using a style profile that prefers short sentences, contractions, and dry directness, rewrite: It is worth noting that the new process will leverage existing infrastructure to streamline operations.",
+      "assertions": [
+        "Uses contractions or short sentences consistent with the described profile",
+        "Replaces leverage and streamline with plainer language",
+        "Sounds direct rather than corporate"
+      ]
+    },
+    {
+      "name": "narrative_humanize",
+      "input": "Make this story snippet sound human: Her heart hammered as she embarked on a journey. The tension was palpable, a rich tapestry of old fears. It wasn't just fear; it was something deeper.",
+      "assertions": [
+        "Removes stock body beat and journey/tapestry metaphors",
+        "Avoids 'not just X, it's Y' structure",
+        "Uses more concrete, showing language"
+      ]
+    }
+  ]
+}
