@@ -1,0 +1,11 @@
+# Case: academic_calibrated_cohort
+
+Genre: academic (calibrated paragraph with design limits and disclosures)
+
+## User request
+
+Reduce defensive language in this paragraph, but do not overclaim.
+
+## Draft
+
+It should be noted that the study was a retrospective cohort, so we cannot rule out reverse causation or residual confounding. The estimate was imprecise (hazard ratio 1.18, 95% CI 0.94–1.49), and the confidence interval includes the null. All participants gave written informed consent, and the protocol was approved by the local ethics committee (approval no. 2024-117). The authors declare no competing interests.

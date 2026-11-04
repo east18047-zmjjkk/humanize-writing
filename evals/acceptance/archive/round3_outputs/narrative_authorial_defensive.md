@@ -1,0 +1,1 @@
+Mara walked into the room, one step and then another, and stayed. She knew she couldn't leave, so she didn't. Her hands hung at her sides and did not move. She kept her face still and her breathing slow and even, and when she spoke she didn't let her voice change. Nothing about her gave her away.

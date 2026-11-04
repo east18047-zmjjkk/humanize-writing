@@ -1,0 +1,10 @@
+{
+  "cases_sha256": "1de3884696dea3d202e580446a53e79c8fcc17455d97d92eeb41e9898f5ad99c",
+  "files": {
+    "SKILL.md": "13743f82174c5f13dd830daa0c6fc50f9044dd74ff66e34ec598a4fe39eaea36",
+    "references/defensive-language.md": "fc265f4de6c698471241376b28181b0f34b62e3cdb16c81c56ff0f5cd945deee",
+    "references/ai-tells.md": "818d88743f9ccc20bc691e236414c778f64f7525759295b9af1ed5820263e1f7",
+    "references/style-profile.md": "f52092e70860ee2ebf6aae16506a27db2237cd63a7afb5056544c0d489af033e",
+    "assets/example-style-profile.md": "66518046fef167f7cc51e564530d4ce3e6812ecb9a8bf2e1f6f4d51344ea60b5"
+  }
+}

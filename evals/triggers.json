@@ -18,6 +18,30 @@
       "should_trigger": true
     },
     {
+      "input": "Cut the defensive hedging in this Discussion section but keep the real limitations",
+      "should_trigger": true
+    },
+    {
+      "input": "This paragraph sounds like it's apologizing for itself; make it direct",
+      "should_trigger": true
+    },
+    {
+      "input": "Reduce the defensive language in this narrative without changing the character's voice",
+      "should_trigger": true
+    },
+    {
+      "input": "Make this sound less over-hedged and less AI-generated",
+      "should_trigger": true
+    },
+    {
+      "input": "减少防御性语言，别让审稿人一眼看出是 AI 写的",
+      "should_trigger": true
+    },
+    {
+      "input": "把这段论文里的过度防御和免责声明去掉，保留真实局限",
+      "should_trigger": true
+    },
+    {
       "input": "What's the weather today?",
       "should_trigger": false
     },
@@ -27,6 +51,10 @@
     },
     {
       "input": "Summarize this article",
+      "should_trigger": false
+    },
+    {
+      "input": "Make this code more defensive by adding input validation",
       "should_trigger": false
     }
   ]

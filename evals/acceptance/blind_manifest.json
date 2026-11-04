@@ -1,0 +1,17 @@
+{
+  "cases_sha256": "cab56b1429e673636b3ea99f1dc352c5b96db4da28100e8037a90ae9dc0f7f2e",
+  "files": {
+    "SKILL.md": "13743f82174c5f13dd830daa0c6fc50f9044dd74ff66e34ec598a4fe39eaea36",
+    "references/defensive-language.md": "fc265f4de6c698471241376b28181b0f34b62e3cdb16c81c56ff0f5cd945deee",
+    "references/ai-tells.md": "818d88743f9ccc20bc691e236414c778f64f7525759295b9af1ed5820263e1f7",
+    "references/style-profile.md": "f52092e70860ee2ebf6aae16506a27db2237cd63a7afb5056544c0d489af033e",
+    "assets/example-style-profile.md": "66518046fef167f7cc51e564530d4ce3e6812ecb9a8bf2e1f6f4d51344ea60b5"
+  },
+  "inputs": {
+    "academic_calibrated_cohort.md": "580a4ff228c5c5ca8760db7d2addc902f89a2442c26c67bda0e4fa4cba649640",
+    "academic_hedge_stack_discussion.md": "9b44dd5de0d5cd680b6cbe426ce5ad2df679e5d96fb7803b524c39e461961409",
+    "email_budget_check_in.md": "fe063c440287b435b1cf18083813a547cf148613b134ba15ddca18221709423e",
+    "narrative_letter_scene.md": "999ba20b55783fcb0934997142e6b81104c5afabe791cf373cb2284518a0ad38"
+  },
+  "blind_test_sha256": "1f5fe5ed769444c520f182e04c9ec79c6c1d3095eccf68348e9ac665c3c5f696"
+}

@@ -1,0 +1,311 @@
+{
+  "skill": "humanize-writing",
+  "version": "0.2.0",
+  "generated_at": "2026-11-03T15:28:45.604234+00:00",
+  "summary": {
+    "cases": 4,
+    "passed": 3,
+    "failed": 1,
+    "result": "FAIL"
+  },
+  "cases": [
+    {
+      "id": "academic_defensive_discussion",
+      "pass": true,
+      "before_markers": 13,
+      "after_markers": 0,
+      "marker_ratio": 0.0,
+      "before_marker_hits": [
+        [
+          "may potentially",
+          1
+        ],
+        [
+          "tentative insights",
+          1
+        ],
+        [
+          "it is important to note",
+          1
+        ],
+        [
+          "great deal of caution",
+          1
+        ],
+        [
+          "some might argue",
+          1
+        ],
+        [
+          "could possibly",
+          1
+        ],
+        [
+          "should be acknowledged",
+          1
+        ],
+        [
+          "not without limitations",
+          1
+        ],
+        [
+          "may limit generalisability",
+          1
+        ],
+        [
+          "it is worth noting",
+          1
+        ],
+        [
+          "further research is needed",
+          1
+        ],
+        [
+          "may perhaps",
+          1
+        ],
+        [
+          "could be associated with",
+          1
+        ]
+      ],
+      "after_marker_hits": [],
+      "must_keep": [
+        {
+          "pattern": "cross-sectional",
+          "found": true
+        },
+        {
+          "pattern": "temporal order",
+          "found": true
+        },
+        {
+          "pattern": "single cent(?:er|re)",
+          "found": true
+        },
+        {
+          "pattern": "1\\.42",
+          "found": true
+        },
+        {
+          "pattern": "1\\.10",
+          "found": true
+        },
+        {
+          "pattern": "1\\.83",
+          "found": true
+        },
+        {
+          "pattern": "1,204",
+          "found": true
+        },
+        {
+          "pattern": "\\bassociation\\b",
+          "found": true
+        },
+        {
+          "pattern": "unmeasured confounding|residual confounding",
+          "found": true
+        },
+        {
+          "pattern": "generalis|generaliz",
+          "found": true
+        }
+      ],
+      "forbidden_hits": [],
+      "ai_tells": [],
+      "words_before": 119,
+      "words_after": 71,
+      "word_ratio": 0.597,
+      "similarity": 0.189,
+      "failures": []
+    },
+    {
+      "id": "academic_calibrated_restraint",
+      "pass": true,
+      "before_markers": 1,
+      "after_markers": 0,
+      "marker_ratio": 0.0,
+      "before_marker_hits": [
+        [
+          "it is worth noting",
+          1
+        ]
+      ],
+      "after_marker_hits": [],
+      "must_keep": [
+        {
+          "pattern": "cross-sectional",
+          "found": true
+        },
+        {
+          "pattern": "reverse causation",
+          "found": true
+        },
+        {
+          "pattern": "0\\.98",
+          "found": true
+        },
+        {
+          "pattern": "1\\.87",
+          "found": true
+        },
+        {
+          "pattern": "95% CI",
+          "found": true
+        },
+        {
+          "pattern": "informed consent",
+          "found": true
+        },
+        {
+          "pattern": "institutional review board",
+          "found": true
+        },
+        {
+          "pattern": "conflicts? of interest",
+          "found": true
+        },
+        {
+          "pattern": "cannot rule out",
+          "found": true
+        },
+        {
+          "pattern": "uncertain",
+          "found": true
+        }
+      ],
+      "forbidden_hits": [],
+      "ai_tells": [],
+      "words_before": 59,
+      "words_after": 54,
+      "word_ratio": 0.915,
+      "similarity": 0.938,
+      "failures": []
+    },
+    {
+      "id": "narrative_authorial_defensive",
+      "pass": false,
+      "before_markers": 9,
+      "after_markers": 0,
+      "marker_ratio": 0.0,
+      "before_marker_hits": [
+        [
+          "\\bof course\\b",
+          1
+        ],
+        [
+          "\\bsomewhat\\b",
+          1
+        ],
+        [
+          "\\bneedless to say\\b",
+          1
+        ],
+        [
+          "\\byou might wonder\\b",
+          1
+        ],
+        [
+          "\\ba little bit\\b",
+          1
+        ],
+        [
+          "\\btried her best\\b",
+          1
+        ],
+        [
+          "\\bto be fair\\b",
+          1
+        ],
+        [
+          "\\banyone in her position\\b",
+          1
+        ],
+        [
+          "\\bin some ways\\b",
+          1
+        ]
+      ],
+      "after_marker_hits": [],
+      "must_keep": [
+        {
+          "pattern": "Mara",
+          "found": true
+        },
+        {
+          "pattern": "\\broom\\b",
+          "found": true
+        }
+      ],
+      "forbidden_hits": [],
+      "ai_tells": [],
+      "words_before": 73,
+      "words_after": 26,
+      "word_ratio": 0.356,
+      "similarity": 0.283,
+      "failures": [
+        "word ratio 0.36 outside [0.45, 1.1]"
+      ]
+    },
+    {
+      "id": "email_defensive_check_in",
+      "pass": true,
+      "before_markers": 7,
+      "after_markers": 0,
+      "marker_ratio": 0.0,
+      "before_marker_hits": [
+        [
+          "just wanted to",
+          1
+        ],
+        [
+          "i may be wrong",
+          1
+        ],
+        [
+          "might possibly",
+          1
+        ],
+        [
+          "sorry to bother",
+          1
+        ],
+        [
+          "hopefully this makes sense",
+          1
+        ],
+        [
+          "don'?t hesitate",
+          1
+        ],
+        [
+          "off base",
+          1
+        ]
+      ],
+      "after_marker_hits": [],
+      "must_keep": [
+        {
+          "pattern": "Sam",
+          "found": true
+        },
+        {
+          "pattern": "Friday",
+          "found": true
+        },
+        {
+          "pattern": "deadline",
+          "found": true
+        }
+      ],
+      "forbidden_hits": [],
+      "ai_tells": [],
+      "words_before": 43,
+      "words_after": 17,
+      "word_ratio": 0.395,
+      "similarity": 0.4,
+      "failures": []
+    }
+  ]
+}

@@ -1,0 +1,342 @@
+{
+  "skill": "humanize-writing",
+  "version": "0.2.0",
+  "cases_sha256": "cab56b1429e673636b3ea99f1dc352c5b96db4da28100e8037a90ae9dc0f7f2e",
+  "generated_at": "2026-11-03T16:04:46.357600+00:00",
+  "summary": {
+    "cases": 4,
+    "passed": 4,
+    "failed": 0,
+    "result": "PASS"
+  },
+  "cases": [
+    {
+      "id": "academic_hedge_stack_discussion",
+      "pass": true,
+      "output_sha256": "861fe1f83a5ee141874902034d0429e5295a8bb21f7cfd7ef84eebb46bf57061",
+      "before_markers": 13,
+      "after_markers": 0,
+      "marker_ratio": 0.0,
+      "before_marker_hits": [
+        [
+          "may potentially",
+          2
+        ],
+        [
+          "somewhat preliminary",
+          1
+        ],
+        [
+          "it is important to note",
+          1
+        ],
+        [
+          "not without limitations",
+          1
+        ],
+        [
+          "some might argue",
+          1
+        ],
+        [
+          "could possibly",
+          1
+        ],
+        [
+          "should be acknowledged",
+          1
+        ],
+        [
+          "may perhaps",
+          1
+        ],
+        [
+          "less robust than they first appear",
+          1
+        ],
+        [
+          "it is worth noting",
+          1
+        ],
+        [
+          "further research is needed",
+          1
+        ],
+        [
+          "possible dose-response",
+          1
+        ]
+      ],
+      "after_marker_hits": [],
+      "must_keep": [
+        {
+          "pattern": "retrospective",
+          "found": true
+        },
+        {
+          "pattern": "recall bias",
+          "found": true
+        },
+        {
+          "pattern": "418",
+          "found": true
+        },
+        {
+          "pattern": "0\\.34",
+          "found": true
+        },
+        {
+          "pattern": "0\\.51",
+          "found": true
+        },
+        {
+          "pattern": "0\\.17",
+          "found": true
+        },
+        {
+          "pattern": "p\\s*<\\s*0\\.001",
+          "found": true
+        },
+        {
+          "pattern": "95% CI",
+          "found": true
+        },
+        {
+          "pattern": "sleep duration",
+          "found": true
+        },
+        {
+          "pattern": "self-rated health",
+          "found": true
+        },
+        {
+          "pattern": "\\bassociation\\b",
+          "found": true
+        },
+        {
+          "pattern": "dose-response|dose–response|dose response|gradient",
+          "found": true
+        },
+        {
+          "pattern": "cannot (?:be )?rule[d]? out",
+          "found": true
+        }
+      ],
+      "forbidden_hits": [],
+      "ai_tells": [],
+      "words_before": 116,
+      "words_after": 72,
+      "word_ratio": 0.621,
+      "similarity": 0.447,
+      "failures": []
+    },
+    {
+      "id": "academic_calibrated_cohort",
+      "pass": true,
+      "output_sha256": "5f31a5163acde818428b89f2dbf05cd0b1eb9fbfa26298ccb5f3510ad8ca23d1",
+      "before_markers": 1,
+      "after_markers": 0,
+      "marker_ratio": 0.0,
+      "before_marker_hits": [
+        [
+          "it should be noted",
+          1
+        ]
+      ],
+      "after_marker_hits": [],
+      "must_keep": [
+        {
+          "pattern": "retrospective cohort",
+          "found": true
+        },
+        {
+          "pattern": "reverse causation",
+          "found": true
+        },
+        {
+          "pattern": "residual confounding",
+          "found": true
+        },
+        {
+          "pattern": "1\\.18",
+          "found": true
+        },
+        {
+          "pattern": "0\\.94",
+          "found": true
+        },
+        {
+          "pattern": "1\\.49",
+          "found": true
+        },
+        {
+          "pattern": "95% CI",
+          "found": true
+        },
+        {
+          "pattern": "confidence interval includes the null",
+          "found": true
+        },
+        {
+          "pattern": "informed consent",
+          "found": true
+        },
+        {
+          "pattern": "ethics committee",
+          "found": true
+        },
+        {
+          "pattern": "2024-117",
+          "found": true
+        },
+        {
+          "pattern": "competing interests",
+          "found": true
+        },
+        {
+          "pattern": "cannot rule out",
+          "found": true
+        }
+      ],
+      "forbidden_hits": [],
+      "ai_tells": [],
+      "words_before": 67,
+      "words_after": 62,
+      "word_ratio": 0.925,
+      "similarity": 0.961,
+      "failures": []
+    },
+    {
+      "id": "narrative_letter_scene",
+      "pass": true,
+      "output_sha256": "c8bedc195754bdf27847b4c02f7f1cab9f02b057028748f87dabae3ae9feb5fa",
+      "before_markers": 10,
+      "after_markers": 0,
+      "marker_ratio": 0.0,
+      "before_marker_hits": [
+        [
+          "\\bof course\\b",
+          1
+        ],
+        [
+          "\\bmore than a little\\b",
+          1
+        ],
+        [
+          "\\bneedless to say\\b",
+          1
+        ],
+        [
+          "\\byou might wonder\\b",
+          1
+        ],
+        [
+          "\\bthe truth is\\b",
+          1
+        ],
+        [
+          "\\bsomewhat\\b",
+          1
+        ],
+        [
+          "\\btried his best\\b",
+          1
+        ],
+        [
+          "\\bto be fair\\b",
+          1
+        ],
+        [
+          "\\banyone would have\\b",
+          1
+        ],
+        [
+          "\\bin some ways\\b",
+          1
+        ]
+      ],
+      "after_marker_hits": [],
+      "must_keep": [
+        {
+          "pattern": "Elias",
+          "found": true
+        },
+        {
+          "pattern": "letter",
+          "found": true
+        }
+      ],
+      "forbidden_hits": [],
+      "ai_tells": [],
+      "words_before": 79,
+      "words_after": 58,
+      "word_ratio": 0.734,
+      "similarity": 0.263,
+      "failures": []
+    },
+    {
+      "id": "email_budget_check_in",
+      "pass": true,
+      "output_sha256": "969f2c2524d176de64104ff96c82af43e783b548648d355cc512394ab6fdb0c6",
+      "before_markers": 8,
+      "after_markers": 0,
+      "marker_ratio": 0.0,
+      "before_marker_hits": [
+        [
+          "sorry to bother",
+          1
+        ],
+        [
+          "just wanted to",
+          1
+        ],
+        [
+          "might possibly",
+          1
+        ],
+        [
+          "i may be wrong",
+          1
+        ],
+        [
+          "nuisance",
+          1
+        ],
+        [
+          "hope this makes sense",
+          1
+        ],
+        [
+          "don'?t hesitate",
+          1
+        ],
+        [
+          "off base",
+          1
+        ]
+      ],
+      "after_marker_hits": [],
+      "must_keep": [
+        {
+          "pattern": "Priya",
+          "found": true
+        },
+        {
+          "pattern": "revised budget",
+          "found": true
+        },
+        {
+          "pattern": "Wednesday",
+          "found": true
+        }
+      ],
+      "forbidden_hits": [],
+      "ai_tells": [],
+      "words_before": 54,
+      "words_after": 14,
+      "word_ratio": 0.259,
+      "similarity": 0.324,
+      "failures": []
+    }
+  ]
+}

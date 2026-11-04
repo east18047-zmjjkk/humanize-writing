@@ -1,0 +1,172 @@
+{
+  "skill": "humanize-writing",
+  "version": "0.2.0",
+  "acceptance_date": "2026-11-03",
+  "cases": [
+    {
+      "id": "academic_defensive_discussion",
+      "genre": "academic",
+      "prompt": "Reduce the defensive language in this Discussion paragraph, but keep the real limitations.",
+      "input": "Although the present study may potentially offer some tentative insights, it is important to note that these findings should be interpreted with a great deal of caution. Some might argue that the observed association could possibly be explained by unmeasured confounding, and it should be acknowledged that our study is not without limitations. The cross-sectional design means that we cannot establish temporal order, and the sample was drawn from a single center, which may limit generalisability. It is worth noting that further research is needed before any firm conclusions can be drawn. Nevertheless, the results may perhaps suggest that treatment X could be associated with outcome Y (OR 1.42, 95% CI 1.10–1.83; n = 1,204).",
+      "checks": {
+        "defensive_markers": [
+          "may potentially",
+          "tentative insights",
+          "it is important to note",
+          "great deal of caution",
+          "some might argue",
+          "could possibly",
+          "should be acknowledged",
+          "not without limitations",
+          "may limit generalisability",
+          "it is worth noting",
+          "further research is needed",
+          "may perhaps",
+          "could be associated with"
+        ],
+        "max_defensive_after": 1,
+        "max_defensive_ratio": 0.25,
+        "must_keep": [
+          "cross-sectional",
+          "temporal order",
+          "single[- ]cent(?:er|re)",
+          "1\\.42",
+          "1\\.10",
+          "1\\.83",
+          "1,204",
+          "\\bassociation\\b",
+          "unmeasured confounding|residual confounding",
+          "generalis|generaliz"
+        ],
+        "forbidden_claims": [
+          "\\bcaused\\b",
+          "\\bproves?\\b",
+          "\\bconfirms? that\\b",
+          "\\bdemonstrates that\\b",
+          "(?:is|was) caused by",
+          "\\bthe effect of treatment\\b"
+        ],
+        "word_ratio": [0.45, 1.15],
+        "min_similarity": null
+      },
+      "notes": "Upper bound of one residual defensive marker allows a natural leftover such as 'further work'. Numbers, design limits, and single-center limit are hard preservation gates."
+    },
+    {
+      "id": "academic_calibrated_restraint",
+      "genre": "academic",
+      "prompt": "Reduce defensive language in this paragraph, but do not overclaim.",
+      "input": "It is worth noting that because the analysis is cross-sectional, we cannot rule out reverse causation. The 95% CI for the primary estimate was wide (0.98–1.87), so the direction of the effect remains uncertain. Participants provided written informed consent, and the study was approved by the institutional review board. The authors report no conflicts of interest.",
+      "checks": {
+        "defensive_markers": [
+          "it is worth noting"
+        ],
+        "max_defensive_after": 0,
+        "max_defensive_ratio": 0.30,
+        "must_keep": [
+          "cross-sectional",
+          "reverse causation",
+          "0\\.98",
+          "1\\.87",
+          "95% CI",
+          "informed consent",
+          "institutional review board",
+          "conflicts? of interest",
+          "cannot rule out",
+          "uncertain"
+        ],
+        "forbidden_claims": [
+          "\\bcaused\\b",
+          "\\bproves?\\b",
+          "\\bconfirms?\\b",
+          "\\bdefinitely\\b",
+          "\\bno (?:remaining )?uncertainty\\b"
+        ],
+        "word_ratio": [0.70, 1.10],
+        "min_similarity": 0.65
+      },
+      "notes": "Restraint case: the only defensive marker is one throat-clearing frame. A correct answer changes almost nothing and keeps every calibrated caveat and disclosure."
+    },
+    {
+      "id": "narrative_authorial_defensive",
+      "genre": "narrative",
+      "prompt": "Make this narrative stop explaining itself, without changing the character's voice.",
+      "input": "Of course, Mara was somewhat nervous as she walked into the room. Needless to say, she had every right to be. You might wonder why she didn't just leave; the answer is that she couldn't. She was a little bit afraid, but she tried her best to hide it. To be fair, anyone in her position would have felt the same way. It was, in some ways, a turning point in her life.",
+      "checks": {
+        "defensive_markers": [
+          "\\bof course\\b",
+          "\\bsomewhat\\b",
+          "\\bneedless to say\\b",
+          "\\byou might wonder\\b",
+          "\\ba little bit\\b",
+          "\\btried her best\\b",
+          "\\bto be fair\\b",
+          "\\banyone in her position\\b",
+          "\\bin some ways\\b"
+        ],
+        "max_defensive_after": 0,
+        "max_defensive_ratio": 0.20,
+        "must_keep": [
+          "Mara",
+          "\\broom\\b"
+        ],
+        "forbidden_claims": [
+          "\\bnervous\\b",
+          "\\bafraid\\b",
+          "\\bfear(?:ful)?\\b",
+          "\\banxious\\b",
+          "\\bsomewhat\\b",
+          "\\ba little bit\\b",
+          "\\bof course\\b",
+          "\\bneedless to say\\b",
+          "\\byou might wonder\\b",
+          "\\bto be fair\\b",
+          "\\banyone in her position\\b",
+          "\\bin some ways\\b",
+          "[0-9]",
+          "[\"“”]",
+          "\\b(?:chair|window|table|desk|lamp)\\b"
+        ],
+        "word_ratio": [0.55, 1.15],
+        "min_similarity": null
+      },
+      "notes": "Forbidden numbers, quoted dialogue, and objects absent from the draft prevent invented detail; gestures and body language that render the stated emotion are allowed. Round 1 added a chair, a window, a table, and dialogue that were not in the draft, and lost 'room'; round 2 over-compressed the scene to 36% of the original. The guidance was tightened after each round, and the final round is reported in ACCEPTANCE.md."
+    },
+    {
+      "id": "email_defensive_check_in",
+      "genre": "professional",
+      "prompt": "Cut the defensive language from this email.",
+      "input": "Hi Sam, I just wanted to reach out because I may be wrong, but I think the deadline might possibly be Friday. Sorry to bother you, and hopefully this makes sense. Please don't hesitate to let me know if I'm off base. Thanks!",
+      "checks": {
+        "defensive_markers": [
+          "just wanted to",
+          "i may be wrong",
+          "might possibly",
+          "sorry to bother",
+          "hopefully this makes sense",
+          "don'?t hesitate",
+          "off base"
+        ],
+        "max_defensive_after": 1,
+        "max_defensive_ratio": 0.30,
+        "must_keep": [
+          "Sam",
+          "Friday",
+          "deadline"
+        ],
+        "forbidden_claims": [
+          "just wanted to",
+          "i may be wrong",
+          "might possibly",
+          "sorry to bother",
+          "hopefully this makes sense",
+          "don'?t hesitate",
+          "off base",
+          "\\bsorry\\b"
+        ],
+        "word_ratio": [0.30, 1.10],
+        "min_similarity": null
+      },
+      "notes": "Short professional case. Removing the apology and permission-seeking should not remove the recipient, the deadline, or the ask."
+    }
+  ]
+}

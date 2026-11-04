@@ -39,6 +39,7 @@ Common patterns that make text sound machine-generated. Prefer natural alternati
 - **Paragraph openers that announce**: "This essay will discuss...", "In this section we explore...".
 - **Present participial trailing clauses**: ", making it...", ", highlighting the...". Reduce frequency.
 - **Binary contrasts / negative parallelism**: Avoid unless genuinely useful and rare.
+- **Defensive register**: stacked hedges ("may potentially"), preemptive apologies, self-disqualification, and reflexive limitations. These overlap with AI tells but need a different fix: keep calibrated caution, cut the self-protection. See `references/defensive-language.md`.
 
 ## Positive Human Signals to Add
 
@@ -51,9 +52,9 @@ Common patterns that make text sound machine-generated. Prefer natural alternati
 
 ## Genre Notes
 
-**Academic / papers**: Keep precision and formality, but avoid dense hedging, formulaic transitions, and empty significance inflation. Prefer clear claims backed by evidence over "it is evident that" or "plays a pivotal role".
+**Academic / papers**: Keep precision and formality, but avoid dense hedging, formulaic transitions, and empty significance inflation. Prefer clear claims backed by evidence over "it is evident that" or "plays a pivotal role". Separate evidence-linked uncertainty (keep) from defensive hedging (cut); see `references/defensive-language.md`.
 
-**Stories / narrative**: Prioritize showing over telling, varied sentence rhythm, natural dialogue, sensory or specific details. Avoid stock body beats ("her heart hammered", "a breath she didn't know she was holding") and over-explained emotions.
+**Stories / narrative**: Prioritize showing over telling, varied sentence rhythm, natural dialogue, sensory or specific details. Avoid stock body beats ("her heart hammered", "a breath she didn't know she was holding") and over-explained emotions. Do not import objects or dialogue the draft does not contain; new concrete detail is invention unless the author supplied it.
 
 **General prose**: Read aloud mentally. If a phrase would never be said in conversation about the topic, rewrite it.
 

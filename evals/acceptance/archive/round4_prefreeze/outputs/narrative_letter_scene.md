@@ -1,0 +1,1 @@
+When the letter arrived, Elias didn't open it right away. He had been expecting bad news for weeks. He held the letter for a while, turned it over once, and set it down. He couldn't bring himself to open it. His hands weren't steady, so he pressed them together and looked at the letter without touching it.

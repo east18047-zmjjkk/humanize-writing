@@ -1,0 +1,1 @@
+Mara stopped in the doorway. She looked at the empty chair, then at the window, then back at the chair. She sat down and put both hands flat on the table so they would not shake. "I'm here," she said. Nobody answered.

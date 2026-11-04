@@ -1,0 +1,184 @@
+{
+  "skill": "humanize-writing",
+  "version": "0.2.0",
+  "acceptance_date": "2026-11-03",
+  "cases": [
+    {
+      "id": "academic_hedge_stack_discussion",
+      "genre": "academic",
+      "prompt": "Reduce the defensive language in this Discussion paragraph, but keep the real limitations.",
+      "input": "Although these findings may potentially seem somewhat preliminary, it is important to note that this study is not without limitations. Some might argue that the observed association could possibly reflect residual confounding, and it should be acknowledged that the results may perhaps be less robust than they first appear. Because the data were collected retrospectively, we cannot rule out recall bias in the exposure measure. The sample was relatively small (n = 418), and it is worth noting that further research is needed before these findings can be generalized. Nevertheless, the association between sleep duration and self-rated health (β = −0.34, 95% CI −0.51 to −0.17; p < 0.001) may potentially suggest a possible dose-response pattern.",
+      "checks": {
+        "defensive_markers": [
+          "may potentially",
+          "somewhat preliminary",
+          "it is important to note",
+          "not without limitations",
+          "some might argue",
+          "could possibly",
+          "should be acknowledged",
+          "may perhaps",
+          "less robust than they first appear",
+          "it is worth noting",
+          "further research is needed",
+          "possible dose-response"
+        ],
+        "max_defensive_after": 1,
+        "max_defensive_ratio": 0.25,
+        "must_keep": [
+          "retrospective",
+          "recall bias",
+          "418",
+          "0\\.34",
+          "0\\.51",
+          "0\\.17",
+          "p\\s*<\\s*0\\.001",
+          "95% CI",
+          "sleep duration",
+          "self-rated health",
+          "\\bassociation\\b",
+          "dose-response|dose–response|dose response|gradient",
+          "cannot (?:be )?rule[d]? out"
+        ],
+        "forbidden_claims": [
+          "\\bcaused\\b",
+          "\\bproves?\\b",
+          "\\bconfirms? that\\b",
+          "\\bdemonstrates that\\b",
+          "(?:is|was) caused by",
+          "\\bthe effect of sleep\\b",
+          "\\bdefinitely\\b"
+        ],
+        "word_ratio": [0.50, 1.15],
+        "min_similarity": null
+      },
+      "notes": "Unseen draft (not in SKILL.md, references, examples, or evals). Marker count includes 'may potentially' twice. Protected: design, numbers, CI, p value, exposure and outcome names."
+    },
+    {
+      "id": "academic_calibrated_cohort",
+      "genre": "academic",
+      "prompt": "Reduce defensive language in this paragraph, but do not overclaim.",
+      "input": "It should be noted that the study was a retrospective cohort, so we cannot rule out reverse causation or residual confounding. The estimate was imprecise (hazard ratio 1.18, 95% CI 0.94–1.49), and the confidence interval includes the null. All participants gave written informed consent, and the protocol was approved by the local ethics committee (approval no. 2024-117). The authors declare no competing interests.",
+      "checks": {
+        "defensive_markers": [
+          "it should be noted"
+        ],
+        "max_defensive_after": 0,
+        "max_defensive_ratio": 0.30,
+        "must_keep": [
+          "retrospective cohort",
+          "reverse causation",
+          "residual confounding",
+          "1\\.18",
+          "0\\.94",
+          "1\\.49",
+          "95% CI",
+          "confidence interval includes the null",
+          "informed consent",
+          "ethics committee",
+          "2024-117",
+          "competing interests",
+          "cannot rule out"
+        ],
+        "forbidden_claims": [
+          "\\bcaused\\b",
+          "\\bproves?\\b",
+          "\\bconfirms?\\b",
+          "\\bdefinitely\\b",
+          "\\bno (?:remaining )?uncertainty\\b"
+        ],
+        "word_ratio": [0.75, 1.10],
+        "min_similarity": 0.70
+      },
+      "notes": "Unseen restraint case: the only defensive marker is one throat-clearing frame. A correct answer changes almost nothing and keeps every calibrated caveat and disclosure."
+    },
+    {
+      "id": "narrative_letter_scene",
+      "genre": "narrative",
+      "prompt": "Make this narrative stop explaining itself, without changing the character's voice.",
+      "input": "Of course, Elias was more than a little uneasy when the letter arrived. Needless to say, he had been expecting bad news for weeks. You might wonder why he didn't open it right away; the truth is that he couldn't bring himself to. He was somewhat afraid of what it said, but he tried his best to seem calm. To be fair, anyone would have been shaken. It was, in some ways, the moment his life split in two.",
+      "checks": {
+        "defensive_markers": [
+          "\\bof course\\b",
+          "\\bmore than a little\\b",
+          "\\bneedless to say\\b",
+          "\\byou might wonder\\b",
+          "\\bthe truth is\\b",
+          "\\bsomewhat\\b",
+          "\\btried his best\\b",
+          "\\bto be fair\\b",
+          "\\banyone would have\\b",
+          "\\bin some ways\\b"
+        ],
+        "max_defensive_after": 0,
+        "max_defensive_ratio": 0.20,
+        "must_keep": [
+          "Elias",
+          "letter"
+        ],
+        "forbidden_claims": [
+          "\\buneasy\\b",
+          "\\bafraid\\b",
+          "\\bfear(?:ful)?\\b",
+          "\\banxious\\b",
+          "\\bnervous\\b",
+          "\\bof course\\b",
+          "\\bmore than a little\\b",
+          "\\bneedless to say\\b",
+          "\\byou might wonder\\b",
+          "\\bthe truth is\\b",
+          "\\bsomewhat\\b",
+          "\\btried his best\\b",
+          "\\bto be fair\\b",
+          "\\banyone would have\\b",
+          "\\bin some ways\\b",
+          "[0-9]",
+          "[\"“”]",
+          "\\b(?:chair|window|table|desk|lamp)\\b"
+        ],
+        "word_ratio": [0.67, 1.20],
+        "min_similarity": null
+      },
+      "notes": "Unseen narrative. No new objects or dialogue; gestures and body language may render the stated unease. The lower bound follows the skill's own 70–115% narrative guidance (0.67 allows the exact one-third boundary)."
+    },
+    {
+      "id": "email_budget_check_in",
+      "genre": "professional",
+      "prompt": "Cut the defensive language from this email.",
+      "input": "Hi Priya, I'm sorry to bother you, but I just wanted to ask whether the revised budget might possibly be ready by Wednesday. I may be wrong, and I don't want to be a nuisance, but I hope this makes sense. Please don't hesitate to tell me if I'm off base. Thanks so much!",
+      "checks": {
+        "defensive_markers": [
+          "sorry to bother",
+          "just wanted to",
+          "might possibly",
+          "i may be wrong",
+          "nuisance",
+          "hope this makes sense",
+          "don'?t hesitate",
+          "off base"
+        ],
+        "max_defensive_after": 1,
+        "max_defensive_ratio": 0.30,
+        "must_keep": [
+          "Priya",
+          "revised budget",
+          "Wednesday"
+        ],
+        "forbidden_claims": [
+          "sorry to bother",
+          "just wanted to",
+          "might possibly",
+          "i may be wrong",
+          "nuisance",
+          "hope this makes sense",
+          "don'?t hesitate",
+          "off base",
+          "\\bsorry\\b"
+        ],
+        "word_ratio": [0.20, 1.10],
+        "min_similarity": null
+      },
+      "notes": "Unseen professional case. Removing apology and permission-seeking should not remove the recipient, the budget, or the deadline; the must-keep checks protect content, so the length floor is permissive."
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+The letter arrived, and Elias had been expecting bad news for weeks. He held it without opening it. He turned it over in his hands once, then again. He set it down and picked it back up. His hands shook. He kept his breathing slow and his face still. He couldn't bring himself to open it. Not yet.
